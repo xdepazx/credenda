@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background: #ffffff;
+    height: 80px;
+    width:100%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo {
+    height: 40px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 650px;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    /*line-height: 80px; */
+    margin: 0 50px;
+}
+
+nav ul li a{
+    color:#000000;
+    font-size: 18px;
+    padding: 7px 13px;
+}
+
+li a:hover{
+    background: none;
+    color:#20d7e0;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #40C7E4;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px){
+    .enlace {
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f3f3f3;
+        top: 80px;
+        left: -200%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #40C7E4;
+    }
+    #check:checked ~ ul {
+        left:0;
+    }
+}
+
+.hero {
+    background-image: url('/img/main-img.png');
+    height: 607px;
+    background-position: right right;
+    background-repeat: no-repeat;
+    background-attachment: none;
+    background-size:auto;
+    background-color: rgb(255, 255, 255);
+} 
+
+.bg-img {
+    background-image: url('/img/bg-img.png');
+    height: 1257px;
+    background-position: left left;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255);
+}
+
+.blue-text {
+    color: #40C7E4;
+}
+
+h1 {
+    font-family: 'Poppins';
+    font-size: 58px;
+}
+
+p {
+    font-family: 'DM Sans';
+    font-size: 16px;
+    color: #66707F;
+}
+
